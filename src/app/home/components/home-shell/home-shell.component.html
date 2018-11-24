@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="card w-100 _mb-15" *ngFor="let category of categories">
+      <h5 class="card-header">{{category.title}}</h5>
+      <div class="card-body">
+        <p class="card-text">{{category.desc}}</p>
+        <a [routerLink]="[category.router]" class="float-right">More >></a>
+      </div>
+    </div>
+  </div>
+</div>
